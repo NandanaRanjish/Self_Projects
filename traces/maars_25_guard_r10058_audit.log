@@ -1,0 +1,13 @@
+Stage 6B complete hardware worker-grant audit
+State: VALID period: 25 ms
+Records: 631 {'R': 85, 'G': 425, 'J': 85, 'X': 24, 'P': 12}
+Release counts: {'CONTROL': 24, 'SAFETY': 15, 'MONITOR': 10, 'TX': 24, 'UNTRUSTED': 12}
+Grants: 425 completions: 85
+Max job grant-wall us: {'CONTROL': 1424, 'SAFETY': 919, 'MONITOR': 634, 'TX': 410, 'UNTRUSTED': 2298}
+Max release-to-completion us: {'CONTROL': 6610, 'SAFETY': 6710, 'MONITOR': 6594, 'TX': 553, 'UNTRUSTED': 7415}
+Worker-grant wall occupancy: 88799 us / 600000 us
+Unattributed wall time: 511201 us
+CONTROL->TX potentially exposed jobs: 10 / 24 (41.67%)
+Valid commands with actual attacker overlap: 0 / 12
+NOTE: Job-overlap vulnerability is NOT MAARS Eq.5 AP.
+Reports: traces/maars_25_guard_r10058_capture_audit/audit.json traces/maars_25_guard_r10058_capture_audit/control_tx_windows.csv traces/maars_25_guard_r10058_capture_audit/grants.csv traces/maars_25_guard_r10058_capture_audit/timeline_50us.csv

@@ -1,0 +1,367 @@
+{
+  "complete_control_tx_pairs": 12,
+  "publication_events": 12,
+  "untrusted_grants": 124,
+  "overlap_count": 51,
+  "overlaps": [
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3690995,
+      "untrusted_end_us": 3691252
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3691310,
+      "untrusted_end_us": 3691566
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3691610,
+      "untrusted_end_us": 3691866
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3691938,
+      "untrusted_end_us": 3692195
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3692238,
+      "untrusted_end_us": 3692495
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3692538,
+      "untrusted_end_us": 3692794
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3692838,
+      "untrusted_end_us": 3693093
+    },
+    {
+      "seq": 53,
+      "published_us": 3690933,
+      "tx_snapshot_us": 3697379,
+      "untrusted_start_us": 3693136,
+      "untrusted_end_us": 3693366
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3741335,
+      "untrusted_end_us": 3741592
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3741942,
+      "untrusted_end_us": 3742202
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3742253,
+      "untrusted_end_us": 3742509
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3742553,
+      "untrusted_end_us": 3742809
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3742853,
+      "untrusted_end_us": 3743106
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3743151,
+      "untrusted_end_us": 3743408
+    },
+    {
+      "seq": 54,
+      "published_us": 3741277,
+      "tx_snapshot_us": 3747373,
+      "untrusted_start_us": 3743451,
+      "untrusted_end_us": 3743638
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3791282,
+      "untrusted_end_us": 3791539
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3791595,
+      "untrusted_end_us": 3791848
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3791935,
+      "untrusted_end_us": 3792192
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3792236,
+      "untrusted_end_us": 3792493
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3792536,
+      "untrusted_end_us": 3792793
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3792836,
+      "untrusted_end_us": 3793091
+    },
+    {
+      "seq": 55,
+      "published_us": 3791206,
+      "tx_snapshot_us": 3797375,
+      "untrusted_start_us": 3793134,
+      "untrusted_end_us": 3793388
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3841706,
+      "untrusted_end_us": 3841926
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3841991,
+      "untrusted_end_us": 3842198
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3842581,
+      "untrusted_end_us": 3842825
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3843238,
+      "untrusted_end_us": 3843445
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3843510,
+      "untrusted_end_us": 3843631
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3843794,
+      "untrusted_end_us": 3844050
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3844098,
+      "untrusted_end_us": 3844355
+    },
+    {
+      "seq": 56,
+      "published_us": 3841631,
+      "tx_snapshot_us": 3847386,
+      "untrusted_start_us": 3844398,
+      "untrusted_end_us": 3844724
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3891029,
+      "untrusted_end_us": 3891281
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3891328,
+      "untrusted_end_us": 3891585
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3891630,
+      "untrusted_end_us": 3891911
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3891955,
+      "untrusted_end_us": 3892212
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3892255,
+      "untrusted_end_us": 3892512
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3892555,
+      "untrusted_end_us": 3892812
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3892855,
+      "untrusted_end_us": 3893110
+    },
+    {
+      "seq": 57,
+      "published_us": 3890940,
+      "tx_snapshot_us": 3897390,
+      "untrusted_start_us": 3893153,
+      "untrusted_end_us": 3893345
+    },
+    {
+      "seq": 58,
+      "published_us": 3943025,
+      "tx_snapshot_us": 3947384,
+      "untrusted_start_us": 3943084,
+      "untrusted_end_us": 3943341
+    },
+    {
+      "seq": 58,
+      "published_us": 3943025,
+      "tx_snapshot_us": 3947384,
+      "untrusted_start_us": 3943398,
+      "untrusted_end_us": 3943655
+    },
+    {
+      "seq": 58,
+      "published_us": 3943025,
+      "tx_snapshot_us": 3947384,
+      "untrusted_start_us": 3943698,
+      "untrusted_end_us": 3943953
+    },
+    {
+      "seq": 58,
+      "published_us": 3943025,
+      "tx_snapshot_us": 3947384,
+      "untrusted_start_us": 3943996,
+      "untrusted_end_us": 3944253
+    },
+    {
+      "seq": 58,
+      "published_us": 3943025,
+      "tx_snapshot_us": 3947384,
+      "untrusted_start_us": 3944296,
+      "untrusted_end_us": 3944542
+    },
+    {
+      "seq": 60,
+      "published_us": 4043090,
+      "tx_snapshot_us": 4047376,
+      "untrusted_start_us": 4043472,
+      "untrusted_end_us": 4043716
+    },
+    {
+      "seq": 60,
+      "published_us": 4043090,
+      "tx_snapshot_us": 4047376,
+      "untrusted_start_us": 4043808,
+      "untrusted_end_us": 4044055
+    },
+    {
+      "seq": 60,
+      "published_us": 4043090,
+      "tx_snapshot_us": 4047376,
+      "untrusted_start_us": 4044121,
+      "untrusted_end_us": 4044279
+    },
+    {
+      "seq": 60,
+      "published_us": 4043090,
+      "tx_snapshot_us": 4047376,
+      "untrusted_start_us": 4044344,
+      "untrusted_end_us": 4044564
+    },
+    {
+      "seq": 60,
+      "published_us": 4043090,
+      "tx_snapshot_us": 4047376,
+      "untrusted_start_us": 4044629,
+      "untrusted_end_us": 4044772
+    },
+    {
+      "seq": 61,
+      "published_us": 4092919,
+      "tx_snapshot_us": 4097390,
+      "untrusted_start_us": 4092987,
+      "untrusted_end_us": 4093245
+    },
+    {
+      "seq": 61,
+      "published_us": 4092919,
+      "tx_snapshot_us": 4097390,
+      "untrusted_start_us": 4093288,
+      "untrusted_end_us": 4093544
+    },
+    {
+      "seq": 61,
+      "published_us": 4092919,
+      "tx_snapshot_us": 4097390,
+      "untrusted_start_us": 4093588,
+      "untrusted_end_us": 4093795
+    }
+  ],
+  "partial_intervals_not_certified": 0
+}
+FAIL: real untrusted grant overlaps pending actuator command

@@ -1,0 +1,5 @@
+{
+  "raw_status": "S11STAT,1,1,25,8,0,1,13,13,0,0,346,0,0",
+  "rate_policy": "25",
+  "warning": "Motor host still advances a nominal 20ms step per CMD; do not claim period-accurate HIL plant."
+}

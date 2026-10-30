@@ -1,0 +1,222 @@
+RUN: /home/ton168/Desktop/MAARS_ESP32S3_Submission/.venv/bin/python tools/hardware_experiment.py --port /dev/ttyACM0 --rate 20 --attacker-prior 20 --ts on --attack on --duration 3 --capture --capture-at 1 --stage9-shadow off --stage9c off --stage9f off --stage11 off --stage11-ablation both --out traces/maars_20_none_r10044.csv --window-start 0 --window-end 3
+Opening serial connection; waiting for ESP32-S3 PONG...
+Connected: PONG,MAARS_STAGE2,20
+PI state reset.
+Firmware: INFO,MAARS_STAGE5D,LADDER=AAI_AEI,AEW=MEASURED,TASKSHUFFLER=COOPERATIVE,CAPTURE=ONE_FRAME
+Requested rate policy: ACK,RATE,20
+Committed 600ms boundary: (1, 20, 0, 638872)
+TaskShuffler mode: ACK,TS,ON
+TaskShuffler stats reset: ACK,TS,RESETSTATS
+Attack disabled: ACK,ATTACK,OFF
+Attacker prior: ACK,ATKPRIOR,20
+Time 0.00s: on-device UNTRUSTED attack -> ON
+ACK,ATTACK,ON
+Time 0.00s: setpoint -> 80.0 rad/s
+t= 0.00s speed=   0.00 computed= 12.00V applied= 12.00V overwrite=0 alarm=0 RTT=65.0ms
+Capture arm: ACK,CAP,ARM
+t= 1.00s speed=  20.98 computed= 12.00V applied= 12.00V overwrite=0 alarm=1 RTT=52.1ms
+t= 2.00s speed=  11.28 computed= 12.00V applied= 12.00V overwrite=0 alarm=1 RTT=53.5ms
+Firmware protocol counters: PROTOSTAT,150,0,149,149,149,149,150,0,0,0,0
+Hardware rate status: RATESTAT,0,20,14,0,0,0
+TaskShuffler hardware status: TSSTAT,1,5895,1768,0,0,0
+TaskShuffler detailed status: TSDIAG,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Breakdown: bad_ack=0 elapsed_overrun=0 budget_underflow=0 max_elapsed_excess_us=0
+Elapsed overruns by worker (CONTROL,SAFETY,MONITOR,TX,UNTRUSTED): [0, 0, 0, 0, 0]
+Budget underflows by blocked worker (CONTROL,SAFETY,MONITOR,TX,UNTRUSTED): [0, 0, 0, 0, 0]
+Frozen scheduling capture: {'state': 3, 'count': 708, 'loss': 0, 'frame': 6, 'period_ms': 20, 'start_us': 3638872, 'end_us': 4238872}
+Full capture records: traces/maars_20_none_r10044_capture.csv
+Capture metadata: traces/maars_20_none_r10044_capture.meta.json
+Deferred trace status: TSTRACE,0,0,0
+Cleanup: ACK,ATTACK,OFF
+
+Stage 5D TaskShuffler: ARMED
+TaskShuffler requested: on
+Sampled TaskShuffler decisions: 129
+Rate requested: 20
+Observed rate configurations: 22
+Samples: 150
+Confirmed on-device actuator overwrites: 50
+On-board ATK events received: 50
+Valid transmitted control jobs (measured AEWs): 150
+TX-consumed corrupted jobs: 50
+Observed corrupt fraction per valid transmitted job: 0.333
+Median measured AEW (ms): 5.463
+Measured AEW range (ms): (0.854, 6.783)
+Attacker-only OWN execution records: 269
+On-board LAD schedule summaries: 45
+Attacker predicted-window attempts: 235
+Attacker predicted-window successes: 50
+Final inferred (ready, phase_us, own_jobs): (1, 18000, 248)
+Telemetry parse errors: 0
+Detector alarm samples: 133
+Observed CONTROL deadline misses: 0
+Observed UNTRUSTED deadline misses: 0
+Median host round-trip (ms): 48.86
+Data: traces/maars_20_none_r10044.csv
+Plots: traces/maars_20_none_r10044_speed.png traces/maars_20_none_r10044_voltage.png traces/maars_20_none_r10044_detector.png
+RUN: /home/ton168/Desktop/MAARS_ESP32S3_Submission/.venv/bin/python tools/scheduling_audit.py traces/maars_20_none_r10044_capture.csv
+Stage 6B complete hardware worker-grant audit
+State: VALID period: 20 ms
+Records: 708 {'R': 97, 'G': 471, 'J': 97, 'P': 13, 'X': 30}
+Release counts: {'CONTROL': 30, 'SAFETY': 15, 'MONITOR': 10, 'TX': 30, 'UNTRUSTED': 12}
+Grants: 471 completions: 97
+Max job grant-wall us: {'CONTROL': 1429, 'SAFETY': 914, 'MONITOR': 657, 'TX': 423, 'UNTRUSTED': 2248}
+Max release-to-completion us: {'CONTROL': 5545, 'SAFETY': 5048, 'MONITOR': 3549, 'TX': 576, 'UNTRUSTED': 6969}
+Worker-grant wall occupancy: 98678 us / 600000 us
+Unattributed wall time: 501322 us
+CONTROL->TX potentially exposed jobs: 6 / 30 (20.00%)
+Valid commands with actual attacker overlap: 3 / 13
+NOTE: Job-overlap vulnerability is NOT MAARS Eq.5 AP.
+Reports: traces/maars_20_none_r10044_capture_audit/audit.json traces/maars_20_none_r10044_capture_audit/control_tx_windows.csv traces/maars_20_none_r10044_capture_audit/grants.csv traces/maars_20_none_r10044_capture_audit/timeline_50us.csv
+RUN: /home/ton168/Desktop/MAARS_ESP32S3_Submission/.venv/bin/python tools/command_window_audit.py traces/maars_20_none_r10044_capture.csv
+{
+  "complete_control_tx_pairs": 13,
+  "publication_events": 13,
+  "untrusted_grants": 109,
+  "overlap_count": 20,
+  "overlaps": [
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3643172,
+      "untrusted_end_us": 3643373
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3643978,
+      "untrusted_end_us": 3644235
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3644292,
+      "untrusted_end_us": 3644549
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3644592,
+      "untrusted_end_us": 3644849
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3644927,
+      "untrusted_end_us": 3645183
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3645227,
+      "untrusted_end_us": 3645483
+    },
+    {
+      "seq": 52,
+      "published_us": 3643098,
+      "tx_snapshot_us": 3647374,
+      "untrusted_start_us": 3645526,
+      "untrusted_end_us": 3645850
+    },
+    {
+      "seq": 54,
+      "published_us": 3741943,
+      "tx_snapshot_us": 3747386,
+      "untrusted_start_us": 3742022,
+      "untrusted_end_us": 3742280
+    },
+    {
+      "seq": 54,
+      "published_us": 3741943,
+      "tx_snapshot_us": 3747386,
+      "untrusted_start_us": 3742323,
+      "untrusted_end_us": 3742579
+    },
+    {
+      "seq": 54,
+      "published_us": 3741943,
+      "tx_snapshot_us": 3747386,
+      "untrusted_start_us": 3742623,
+      "untrusted_end_us": 3742922
+    },
+    {
+      "seq": 54,
+      "published_us": 3741943,
+      "tx_snapshot_us": 3747386,
+      "untrusted_start_us": 3742969,
+      "untrusted_end_us": 3743226
+    },
+    {
+      "seq": 54,
+      "published_us": 3741943,
+      "tx_snapshot_us": 3747386,
+      "untrusted_start_us": 3743271,
+      "untrusted_end_us": 3743519
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4042204,
+      "untrusted_end_us": 4042380
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4042778,
+      "untrusted_end_us": 4042934
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4043078,
+      "untrusted_end_us": 4043335
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4043392,
+      "untrusted_end_us": 4043649
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4043692,
+      "untrusted_end_us": 4043947
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4043991,
+      "untrusted_end_us": 4044247
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4044290,
+      "untrusted_end_us": 4044547
+    },
+    {
+      "seq": 61,
+      "published_us": 4042123,
+      "tx_snapshot_us": 4047393,
+      "untrusted_start_us": 4044590,
+      "untrusted_end_us": 4044712
+    }
+  ],
+  "partial_intervals_not_certified": 0
+}
+FAIL: real untrusted grant overlaps pending actuator command
+PASS maars_20_none_r10044: 50/150 corruptions; 235 attempts

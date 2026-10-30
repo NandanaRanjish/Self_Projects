@@ -1,0 +1,51 @@
+{
+  "start_us": 3638872,
+  "end_us": 4238872,
+  "per_worker_max_job_grant_wall_us": {
+    "CONTROL": 1427,
+    "SAFETY": 918,
+    "MONITOR": 673,
+    "TX": 427,
+    "UNTRUSTED": 2237
+  },
+  "per_worker_max_response_us": {
+    "CONTROL": 5155,
+    "SAFETY": 4200,
+    "MONITOR": 4230,
+    "TX": 604,
+    "UNTRUSTED": 11109
+  },
+  "valid": true,
+  "errors": [],
+  "notes": [
+    "UNATTRIBUTED is dispatcher/interrupt/non-worker wall time, not proven CPU idle.",
+    "Attacker overlap is a potential job-based opportunity, NOT MAARS literal Eq.5 AP."
+  ],
+  "frame": 6,
+  "period_ms": 20,
+  "record_count": 700,
+  "record_kind_counts": {
+    "R": 97,
+    "G": 462,
+    "J": 97,
+    "X": 30,
+    "P": 14
+  },
+  "job_release_counts": {
+    "CONTROL": 30,
+    "SAFETY": 15,
+    "MONITOR": 10,
+    "TX": 30,
+    "UNTRUSTED": 12
+  },
+  "job_completion_count": 97,
+  "grant_count": 462,
+  "worker_grant_wall_us": 99129,
+  "unattributed_wall_us": 500871,
+  "valid_publications": 14,
+  "potential_vulnerable_jobs": 3,
+  "total_control_arrivals": 30,
+  "potential_overlap_fraction": 0.1,
+  "valid_vulnerable_commands": 0,
+  "total_valid_commands": 14
+}

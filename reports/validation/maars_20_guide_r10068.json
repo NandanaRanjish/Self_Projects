@@ -1,0 +1,25 @@
+{
+  "id": "maars_20_guide_r10068",
+  "rate": "20",
+  "mode": "guide",
+  "trial": "10068",
+  "prior": null,
+  "guidance_enabled": 1,
+  "guard_enabled": 0,
+  "firmware_sha256": "8eea303e5bd952d351a5349031611d9f641c9ce9695610bfbc27b995b5ed6322",
+  "source_sha256": "82b43cff866244b2505769c826fa0ddb9df8a82f49be106cde5e9d1c3f561aba",
+  "host_sha256": "63ce1a3b6f2621813d530749f98dfb54cc4b9e12b9707a293655ebffb19e0af3",
+  "started_utc": "2026-10-29T16:31:15.755929+00:00",
+  "status": "PASS",
+  "samples": 150,
+  "corrupted": 54,
+  "corruption_fraction": 0.36,
+  "attempts": 239,
+  "captured_jobs": 97,
+  "overlap_windows": 5,
+  "capture_period_ms": 20,
+  "rates_seen_ms": [
+    20
+  ],
+  "motor_rmse_rad_s": 56.155405
+}

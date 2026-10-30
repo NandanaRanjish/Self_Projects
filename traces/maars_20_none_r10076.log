@@ -1,0 +1,55 @@
+Opening serial connection; waiting for ESP32-S3 PONG...
+Connected: PONG,MAARS_STAGE2,20
+PI state reset.
+Firmware: INFO,MAARS_STAGE5D,LADDER=AAI_AEI,AEW=MEASURED,TASKSHUFFLER=COOPERATIVE,CAPTURE=ONE_FRAME
+Requested rate policy: ACK,RATE,20
+Committed 600ms boundary: (1, 20, 0, 638872)
+TaskShuffler mode: ACK,TS,ON
+TaskShuffler stats reset: ACK,TS,RESETSTATS
+Attack disabled: ACK,ATTACK,OFF
+Attacker prior: ACK,ATKPRIOR,20
+Time 0.00s: on-device UNTRUSTED attack -> ON
+ACK,ATTACK,ON
+Time 0.00s: setpoint -> 80.0 rad/s
+t= 0.00s speed=   0.00 computed= 12.00V applied= 12.00V overwrite=0 alarm=0 RTT=67.5ms
+Capture arm: ACK,CAP,ARM
+t= 1.00s speed=  17.99 computed= 12.00V applied=-12.00V overwrite=1 alarm=1 RTT=45.5ms
+t= 2.00s speed=  10.33 computed= 12.00V applied=-12.00V overwrite=1 alarm=1 RTT=61.0ms
+Firmware protocol counters: PROTOSTAT,150,0,149,149,149,149,150,0,0,0,0
+Hardware rate status: RATESTAT,0,20,14,0,0,0
+TaskShuffler hardware status: TSSTAT,1,5879,1807,0,0,0
+TaskShuffler detailed status: TSDIAG,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Breakdown: bad_ack=0 elapsed_overrun=0 budget_underflow=0 max_elapsed_excess_us=0
+Elapsed overruns by worker (CONTROL,SAFETY,MONITOR,TX,UNTRUSTED): [0, 0, 0, 0, 0]
+Budget underflows by blocked worker (CONTROL,SAFETY,MONITOR,TX,UNTRUSTED): [0, 0, 0, 0, 0]
+Frozen scheduling capture: {'state': 3, 'count': 710, 'loss': 0, 'frame': 6, 'period_ms': 20, 'start_us': 3638872, 'end_us': 4238872}
+Full capture records: traces/maars_20_none_r10076_capture.csv
+Capture metadata: traces/maars_20_none_r10076_capture.meta.json
+Deferred trace status: TSTRACE,0,0,0
+Cleanup: ACK,ATTACK,OFF
+
+Stage 5D TaskShuffler: ARMED
+TaskShuffler requested: on
+Sampled TaskShuffler decisions: 128
+Rate requested: 20
+Observed rate configurations: 22
+Samples: 150
+Confirmed on-device actuator overwrites: 51
+On-board ATK events received: 51
+Valid transmitted control jobs (measured AEWs): 150
+TX-consumed corrupted jobs: 51
+Observed corrupt fraction per valid transmitted job: 0.340
+Median measured AEW (ms): 5.428
+Measured AEW range (ms): (1.411, 6.821)
+Attacker-only OWN execution records: 266
+On-board LAD schedule summaries: 45
+Attacker predicted-window attempts: 232
+Attacker predicted-window successes: 51
+Final inferred (ready, phase_us, own_jobs): (1, 18000, 247)
+Telemetry parse errors: 0
+Detector alarm samples: 133
+Observed CONTROL deadline misses: 0
+Observed UNTRUSTED deadline misses: 0
+Median host round-trip (ms): 48.17
+Data: traces/maars_20_none_r10076.csv
+Plots: traces/maars_20_none_r10076_speed.png traces/maars_20_none_r10076_voltage.png traces/maars_20_none_r10076_detector.png

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_STAGE11_MIXED_RATE_MODEL_GUIDANCE_HARDWARE_SMOKE",
+  "run": "traces/maars_alt_prior20_both_r1401",
+  "observed_rates_ms": [
+    20,
+    25
+  ],
+  "schedule_switches": 24,
+  "guided_worker_decisions": 1152,
+  "cooperative_guard_deferrals": 266,
+  "guard_violations": 0,
+  "capture_period_ms": 25,
+  "capture_job_counts": {
+    "CONTROL": 24,
+    "SAFETY": 15,
+    "MONITOR": 10,
+    "TX": 24,
+    "UNTRUSTED": 12
+  },
+  "limitations": "Does not prove equal offline-slot replay, real-plant CQLF stability, or detector validity."
+}

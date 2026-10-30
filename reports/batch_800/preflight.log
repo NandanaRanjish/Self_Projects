@@ -1,0 +1,25 @@
+OK CMakeLists.txt
+OK sdkconfig
+OK main/main.c
+OK main/maars_schedule_bank.h
+OK firmware/MAARS_ESP32S3_Unified.bin
+OK firmware/firmware_manifest.json
+OK tools/hardware_experiment.py
+OK tools/scheduling_audit.py
+OK tools/command_window_audit.py
+OK dashboard/build_dashboard.py
+OK model/offline_analysis.py
+OK: Python serial
+OK: Python numpy
+OK: Python scipy
+OK: Python matplotlib
+OK: Source feature: guidance flag
+OK: Source feature: guard flag
+OK: Source feature: GUIDE command
+OK: Source feature: GUARD command
+OK: Source feature: BOTH command
+OK: Source feature: guidance selection
+OK: Source feature: guard eligibility filter
+OK: Source feature: host ablation argument
+OK: Source feature: host mode verification
+PASS: complete four-mode unified release

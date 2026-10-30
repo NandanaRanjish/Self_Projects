@@ -1,0 +1,4 @@
+RUN: /home/ton168/Desktop/MAARS_ESP32S3_Submission/.venv/bin/python tools/hardware_experiment.py --port /dev/ttyACM0 --rate 25 --attacker-prior 25 --ts on --attack on --duration 3 --capture --capture-at 1 --stage9-shadow off --stage9c off --stage9f off --stage11 on --stage11-ablation both --out traces/maars_25_both_r10004.csv --window-start 0 --window-end 3
+RUN FAILED: [Errno 13] could not open port /dev/ttyACM0: [Errno 13] Permission denied: '/dev/ttyACM0'
+Any partial samples: traces/maars_25_both_r10004.csv
+STOP: Command returned 1; preserve partial files and investigate

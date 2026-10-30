@@ -1,0 +1,23 @@
+{
+  "idf_version": "ESP-IDF v5.5.6-1-g3ea97e7591b",
+  "python": "3.14.4",
+  "observed_host_packages": {
+    "pyserial": "3.5",
+    "numpy": "not installed in builder Python",
+    "scipy": "not installed in builder Python",
+    "matplotlib": "not installed in builder Python"
+  },
+  "python_local_dependencies": [
+    "motor_model.py",
+    "plot_motor.py",
+    "simulate_motor.py",
+    "attack_analysis.py",
+    "scheduling_audit.py",
+    "hardware_experiment.py",
+    "shadow_detector_status.py",
+    "guidance_status.py",
+    "command_window_audit.py",
+    "guard_status.py"
+  ],
+  "build_timestamp_utc": "2026-10-26T12:30:53.997010+00:00"
+}

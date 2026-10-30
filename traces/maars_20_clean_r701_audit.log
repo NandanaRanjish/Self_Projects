@@ -1,0 +1,4 @@
+  File "/home/ton168/Downloads/MAARS_ESP32S3_Clean_Submission/MAARS_ESP32S3_Submission/tools/scheduling_audit.py", line 210
+    writer.writeheader();writer.writerows(report['all_grants']
+                                         ^
+SyntaxError: '(' was never closed

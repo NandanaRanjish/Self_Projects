@@ -1,0 +1,165 @@
+{
+  "status": "CERTIFIED_IDEAL_LINEAR_SAMPLED_MODEL_ONLY",
+  "plant_parameters": {
+    "R": 2.0,
+    "L": 0.02,
+    "Kt": 0.1,
+    "Ke": 0.1,
+    "J": 0.002,
+    "b": 0.001,
+    "KP": 0.18,
+    "KI": 0.6
+  },
+  "source_motor_model_verified": "tools/motor_model.py",
+  "periods_ms": [
+    20,
+    25
+  ],
+  "P_rational": [
+    [
+      "1847551/1000000",
+      "299417/200000",
+      "-325201/1000000"
+    ],
+    [
+      "299417/200000",
+      "3784481/1000000",
+      "-144127/50000"
+    ],
+    [
+      "-325201/1000000",
+      "-144127/50000",
+      "70981447/500000"
+    ]
+  ],
+  "P_float": [
+    [
+      1.847551,
+      1.497085,
+      -0.325201
+    ],
+    [
+      1.497085,
+      3.784481,
+      -2.88254
+    ],
+    [
+      -0.325201,
+      -2.88254,
+      141.962894
+    ]
+  ],
+  "P_min_eigenvalue_display": 1.0244041607671814,
+  "modes": [
+    {
+      "plant_next_hold_period_ms": 20,
+      "pi_previous_sample_interval_ms": 20,
+      "A_cl": [
+        [
+          0.12068803200777645,
+          -0.12399984083853556,
+          0.42561846320018526
+        ],
+        [
+          0.42281095904099997,
+          0.9081777606430086,
+          0.28075041591853
+        ],
+        [
+          0.0,
+          -0.012,
+          1.0
+        ]
+      ],
+      "spectral_radius": 0.9312456008530221,
+      "max_eigenvalue_delta": -0.8637078572587678,
+      "matrix_exp_error_bound": 2.9756189526837562e-34,
+      "delta_A_operator_bound": 1.0640813374797112e-33,
+      "delta_quadratic_operator_bound": 2.7190811901601882e-30,
+      "exact_rational_negative_definite_checked": true
+    },
+    {
+      "plant_next_hold_period_ms": 20,
+      "pi_previous_sample_interval_ms": 25,
+      "A_cl": [
+        [
+          0.12068803200777645,
+          -0.12527669622813614,
+          0.42561846320018526
+        ],
+        [
+          0.42281095904099997,
+          0.9073355093952531,
+          0.28075041591853
+        ],
+        [
+          0.0,
+          -0.015,
+          1.0
+        ]
+      ],
+      "spectral_radius": 0.9201065702206876,
+      "max_eigenvalue_delta": -0.4620173280122626,
+      "matrix_exp_error_bound": 2.9756189526837562e-34,
+      "delta_A_operator_bound": 1.0667593945371265e-33,
+      "delta_quadratic_operator_bound": 2.725924515303209e-30,
+      "exact_rational_negative_definite_checked": true
+    },
+    {
+      "plant_next_hold_period_ms": 25,
+      "pi_previous_sample_interval_ms": 20,
+      "A_cl": [
+        [
+          0.06463092850110141,
+          -0.13048872147186685,
+          0.44821285957325585
+        ],
+        [
+          0.4443185243380175,
+          0.8740535554171733,
+          0.3894335235238671
+        ],
+        [
+          0.0,
+          -0.012,
+          1.0
+        ]
+      ],
+      "spectral_radius": 0.9466181601475395,
+      "max_eigenvalue_delta": -0.6848454136673068,
+      "matrix_exp_error_bound": 2.8110456059311965e-29,
+      "delta_A_operator_bound": 1.005229908680996e-28,
+      "delta_quadratic_operator_bound": 2.568696245490778e-25,
+      "exact_rational_negative_definite_checked": true
+    },
+    {
+      "plant_next_hold_period_ms": 25,
+      "pi_previous_sample_interval_ms": 25,
+      "A_cl": [
+        [
+          0.06463092850110141,
+          -0.1318333600505866,
+          0.44821285957325585
+        ],
+        [
+          0.4443185243380175,
+          0.8728852548466017,
+          0.3894335235238671
+        ],
+        [
+          0.0,
+          -0.015,
+          1.0
+        ]
+      ],
+      "spectral_radius": 0.9175846935098197,
+      "max_eigenvalue_delta": -0.9564799720903898,
+      "matrix_exp_error_bound": 2.8110456059311965e-29,
+      "delta_A_operator_bound": 1.007759849726334e-28,
+      "delta_quadratic_operator_bound": 2.575161085034799e-25,
+      "exact_rational_negative_definite_checked": true
+    }
+  ],
+  "proof": "Exact rational Sylvester test of P>0 and P-A^T P A-eta I>0 using a rigorous Taylor matrix exponential enclosure for EACH OF FOUR combinations of previous PI dt and next plant hold period.",
+  "boundary": "ONLY zero-delay, unsaturated, disturbance-free, linear sampled-data PI regulation about a constant reference. The four modes include rate-transition PI dt mismatches. DOES NOT prove stability for physical ESP32/USB-loop, saturation, sample loss, time-varying references, latency or arbitrary controller implementations."
+}

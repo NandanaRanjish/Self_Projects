@@ -1,0 +1,45 @@
+{
+  "complete_control_tx_pairs": 12,
+  "publication_events": 12,
+  "untrusted_grants": 119,
+  "overlap_count": 5,
+  "overlaps": [
+    {
+      "seq": 66,
+      "published_us": 4643307,
+      "tx_snapshot_us": 4647395,
+      "untrusted_start_us": 4643729,
+      "untrusted_end_us": 4643966
+    },
+    {
+      "seq": 66,
+      "published_us": 4643307,
+      "tx_snapshot_us": 4647395,
+      "untrusted_start_us": 4644031,
+      "untrusted_end_us": 4644139
+    },
+    {
+      "seq": 66,
+      "published_us": 4643307,
+      "tx_snapshot_us": 4647395,
+      "untrusted_start_us": 4644526,
+      "untrusted_end_us": 4644764
+    },
+    {
+      "seq": 66,
+      "published_us": 4643307,
+      "tx_snapshot_us": 4647395,
+      "untrusted_start_us": 4644940,
+      "untrusted_end_us": 4645197
+    },
+    {
+      "seq": 66,
+      "published_us": 4643307,
+      "tx_snapshot_us": 4647395,
+      "untrusted_start_us": 4645278,
+      "untrusted_end_us": 4645417
+    }
+  ],
+  "partial_intervals_not_certified": 0
+}
+FAIL: real untrusted grant overlaps pending actuator command

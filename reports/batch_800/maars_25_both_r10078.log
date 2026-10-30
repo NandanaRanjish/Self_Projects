@@ -1,0 +1,15 @@
+RUN: /home/ton168/Desktop/MAARS_ESP32S3_Submission/.venv/bin/python tools/hardware_experiment.py --port /dev/ttyACM0 --rate 25 --attacker-prior 25 --ts on --attack on --duration 3 --capture --capture-at 1 --stage9-shadow off --stage9c off --stage9f off --stage11 on --stage11-ablation both --out traces/maars_25_both_r10078.csv --window-start 0 --window-end 3
+Traceback (most recent call last):
+  File "/home/ton168/Desktop/MAARS_ESP32S3_Submission/repro/experiment.py", line 350, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ~~~~^^
+  File "/home/ton168/Desktop/MAARS_ESP32S3_Submission/repro/experiment.py", line 328, in main
+    if args.command=='one':run_one(args.rate,args.mode,trial_id(args.id))
+                           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ton168/Desktop/MAARS_ESP32S3_Submission/repro/experiment.py", line 154, in run_one
+    execute(cmd,TRACES/(st+'.log'))
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ton168/Desktop/MAARS_ESP32S3_Submission/repro/experiment.py", line 28, in execute
+    for line in child.stdout:
+                ^^^^^^^^^^^^
+KeyboardInterrupt

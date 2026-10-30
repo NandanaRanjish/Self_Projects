@@ -1,0 +1,39 @@
+{
+  "image": "firmware/MAARS_ESP32S3_Unified.bin",
+  "image_size_bytes": 378576,
+  "sha256": "8eea303e5bd952d351a5349031611d9f641c9ce9695610bfbc27b995b5ed6322",
+  "flash_offset": "0x0",
+  "esp_target": "esp32s3",
+  "components": [
+    {
+      "offset": "0x0",
+      "file": "bootloader/bootloader.bin"
+    },
+    {
+      "offset": "0x8000",
+      "file": "partition_table/partition-table.bin"
+    },
+    {
+      "offset": "0x10000",
+      "file": "maars_stage2.bin"
+    }
+  ],
+  "build_timestamp_utc": "2026-10-26T12:30:53.997010+00:00",
+  "repaired_sensor_timestamp_check": true,
+  "host_protocol_diagnostics": true,
+  "independent_ablation_modes": [
+    "none",
+    "guide",
+    "guard",
+    "both"
+  ],
+  "four_mode_patch_signature": "MAARS_UNIFIED_FOUR_MODE_ABLATION_V1",
+  "note": "Prebuilt merged firmware is unchanged. Its build-source hashes refer to the original build; submission hashes refer to the cleaned, unrebuilt sources. Rebuild and validate before treating this as a byte-for-byte source reproducible binary.",
+  "build_source_main_sha256": "1d88e52ee22406a3d5bd29b41d2e2dd4ec0519f4d1b762c8fa8dd3ad3ecf9fb8",
+  "build_source_header_sha256": "7e656b05653bcd81592422b2ba807241eabd58c4899e42e97027c8814c069286",
+  "build_host_runner_sha256": "f076b14c15bf6ac3d1f28a4cbac9f199e633f8a0a8183517df2c90f752f2a5da",
+  "submission_main_sha256": "b1ba021943cef224bc64a691c5aa6b1d5d24f2260b9d888f3895e1ebcdea7970",
+  "submission_schedule_header_sha256": "8bd56c91e5d7ef21333f82851904db25de3f38518b7820583a9d8ed96ba8356f",
+  "submission_host_runner_sha256": "c1c2d8d6c12f9787f51b89cb8114106c6e9607b0cbb04f8d9ebefd1792b29bc7",
+  "source_edit_scope": "Documentation/comments, module filenames, host console summaries; scheduling logic and wire protocol preserved."
+}
