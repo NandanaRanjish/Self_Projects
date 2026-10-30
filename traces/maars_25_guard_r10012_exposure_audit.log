@@ -1,9 +1,0 @@
-{
-  "complete_control_tx_pairs": 12,
-  "publication_events": 12,
-  "untrusted_grants": 116,
-  "overlap_count": 0,
-  "overlaps": [],
-  "partial_intervals_not_certified": 0
-}
-PASS: zero UNTRUSTED grant overlap in complete captured command windows

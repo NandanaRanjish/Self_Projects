@@ -1,0 +1,34 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ESP-IDF generated build files
+/build/
+/managed_components/
+
+# Bulk experimental data
+/traces/
+
+# Generated large dashboards
+/dashboard/site/index.html
+/dashboard.html
+
+# Generated per-run validation/logs
+/reports/validation/
+/reports/experiment_batches/
+/reports/extended_experiments/
+/reports/verification_demo/
+/reports/batch_800/
+
+# Temporary files and backups
+*.log
+*.tmp
+*.bak
+*.backup
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
