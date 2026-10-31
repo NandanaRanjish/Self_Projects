@@ -1,0 +1,26 @@
+﻿# ESP-IDF Build Directories
+**/build/
+firmware/build/
+sdkconfig.old
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# System & Editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary execution files
+*.tmp
+*.bak

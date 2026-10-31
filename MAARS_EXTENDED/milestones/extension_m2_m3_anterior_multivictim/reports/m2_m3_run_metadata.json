@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-31T05:05:32Z",
+  "firmware_binary": "D:\\maars_milestones\\Self_Projects-main\\build\\maars_esp32s3.bin",
+  "firmware_sha256": "2aca30b94ae2b78f5de3f9f27944e7161dbf43ee332e791b5f7808db4f2f76a0",
+  "target_port": "COM7",
+  "baud_rate": 115200,
+  "milestones": [
+    "M2_Anterior_vs_Posterior",
+    "M3_Multi_Victim_SVI"
+  ]
+}

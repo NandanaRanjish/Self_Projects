@@ -1,0 +1,1 @@
+Period-correct offline RK4 motor model with PI and saturation. Does not certify nonlinear/saturated stability; source parameters from the original Stage2 motor_model.py.

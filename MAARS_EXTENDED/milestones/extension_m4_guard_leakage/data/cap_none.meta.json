@@ -1,0 +1,21 @@
+{
+  "mode": "none",
+  "duration_s": 40.0,
+  "control_period_us": 20000,
+  "control_planned_us": 1594458872,
+  "s11_before": {
+    "requested": 0,
+    "active": 0,
+    "alert": 0,
+    "guard": 1,
+    "deferrals": 59
+  },
+  "s11_after": {
+    "requested": 0,
+    "active": 0,
+    "alert": 0,
+    "guard": 1,
+    "deferrals": 59
+  },
+  "timestamp": "2026-10-31 12:17:54"
+}

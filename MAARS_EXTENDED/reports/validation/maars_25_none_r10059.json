@@ -1,0 +1,25 @@
+{
+  "id": "maars_25_none_r10059",
+  "rate": "25",
+  "mode": "none",
+  "trial": "10059",
+  "prior": null,
+  "guidance_enabled": 0,
+  "guard_enabled": 0,
+  "firmware_sha256": "8eea303e5bd952d351a5349031611d9f641c9ce9695610bfbc27b995b5ed6322",
+  "source_sha256": "82b43cff866244b2505769c826fa0ddb9df8a82f49be106cde5e9d1c3f561aba",
+  "host_sha256": "63ce1a3b6f2621813d530749f98dfb54cc4b9e12b9707a293655ebffb19e0af3",
+  "started_utc": "2026-10-29T16:15:07.220868+00:00",
+  "status": "PASS",
+  "samples": 150,
+  "corrupted": 31,
+  "corruption_fraction": 0.20666666666666667,
+  "attempts": 221,
+  "captured_jobs": 85,
+  "overlap_windows": 10,
+  "capture_period_ms": 25,
+  "rates_seen_ms": [
+    25
+  ],
+  "motor_rmse_rad_s": 49.287709
+}
